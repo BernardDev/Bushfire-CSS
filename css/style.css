@@ -17,12 +17,6 @@
 /* Font styles */
 /* ---------------- */
 
-a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-}
-
 body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
@@ -49,15 +43,19 @@ h3 {
   letter-spacing: 1px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* ---------------- */
 /* Font size */
 /* ---------------- */
 
-body {
+html,
+a,
+li {
   font-size: 16px;
-}
-
-p {
+  /* height: 100% */
 }
 
 h1 {
@@ -66,12 +64,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   /* capped header, important-field, reg header */
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   /* first-graph, btn, headers-small-capped */
 }
 
@@ -110,7 +108,7 @@ h3 {
 
 hr {
   width: 60%;
-  height: 1px;
+  /* height: 1px; */
   background: #fff;
   color: #dcdcdc;
   /* width: auto; */
@@ -118,14 +116,14 @@ hr {
 }
 
 .c-round-s {
-  border-radius: 10px;
+  border-radius: 0.8rem;
   padding: 10px;
   /* corner */
 }
 
 .c-round {
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 0.8rem;
+  padding: 0.8rem;
   /* corner */
 }
 
@@ -135,12 +133,10 @@ hr {
 }
 
 .btn-empty {
-  border: 2px solid #b2222a;
-  padding: 15px;
-  /* width: 420px; */
+  border: 1px solid #b2222a;
+  padding: 1rem;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,32 +144,27 @@ hr {
 }
 
 .btn-full {
-  padding: 15px;
-  width: 420px;
+  padding: 1rem;
   border: none;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  /* h3 button 2 */
 }
 
 .field-full {
-  padding: 15px;
-  margin-bottom: 40px;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
   width: 500px;
   border: none;
   text-align: center;
   text-decoration: none;
-  /* display: inline-block; */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  /* h3 button 2 */
 }
 
 .field-graphic {
@@ -246,10 +237,17 @@ hr {
   color: #333;
 }
 
+.background {
+  width: 100%;
+  height: auto;
+  /* margin: 0 auto; */
+}
+
 .container {
+  height: auto;
   max-width: 70%;
   min-width: 70%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* ---------------- */
@@ -257,160 +255,114 @@ hr {
 /* ---------------- */
 
 /* ----------------- */
-/* Navigation styles */
+/* >navbar */
 /* ----------------- */
 
-.site-navigation {
-  height: 8vh;
-  padding: 0px 10%;
+.navbar {
+  position: relative;
+  height: 4rem;
+  width: auto;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  background-color: white;
-}
-
-/* --------- */
-
-.wrap-logo {
-  width: 60%;
-  height: auto;
-  display: flex;
-  justify-content: flex-end;
+  /* flex-wrap: wrap-reverse; */
+  flex-wrap: wrap;
   align-items: center;
 }
 
-.wrap-logo img {
-  padding-right: 30px;
-  width: 220px;
-  height: auto;
-  margin: 40px;
+/* >navbar-logo */
+
+.navbar__logo {
+  padding: 1rem;
 }
 
-.wrap-nav {
-  width: 40%;
+.navbar__logo img {
+  margin-right: 40px;
+  width: 300px;
   height: auto;
+}
+
+/* >navbar-links */
+
+.navbar__links {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.wrap-nav a {
-  text-align: center;
-  text-decoration: none;
+.navbar p,
+.navbar a {
   margin-right: 20px;
 }
 
-.wrap-nav img {
-  width: 50px;
-  height: auto;
-}
-
-.wrap-nav p {
-  margin-right: 20px;
+.navbar__links img {
+  margin-left: 20px;
+  width: auto;
+  height: 40px;
 }
 
 /* ---------- */
-/* Header img */
+/* >header */
 /* ---------- */
 
 .header {
-  height: 30vh;
-  display: block;
-  /* temporary */
-  /* margin-bottom: 50px; */
-}
-
-.wrap-header {
-  object-fit: contain;
-}
-
-.wrap-header img {
-}
-
-.header-img {
+  position: relative;
+  height: 280px;
+  width: auto;
+  overflow: hidden;
+  background: url('/img/wildfire.jpg') no-repeat center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
-  background-image: url('/img/wildfire.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 
-h1 {
+.header__wrap {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
   text-align: center;
 }
 
+h1,
+h2 {
+  padding: 2rem;
+}
+
 /* ---------- */
-/* Plan */
+/* >plan */
 /* ---------- */
 
 .plan {
-  padding-top: 20px;
-  padding-bottom: 140px;
-  height: 100%;
   display: flex;
   position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 68vh; */
 }
 
-/* text */
+/* >plan */
 
-.wrap-text {
-  text-align: center;
-  max-width: 90vh;
-  margin: 0px 50px;
-  margin-top: 16px;
-  margin-bottom: 8px;
-}
-
-.wrap-text h2 {
-  margin-top: 16px;
-  margin-bottom: 10px;
-}
-
-.wrap-text p {
-  margin-top: 13px;
-  margin-bottom: 8px;
-  padding: 0px 180px;
-}
-
-/* board */
-
-.wrap-board {
-  /* margin: 0px 50px;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-  position: relative;
-  z-index: -0;
-}
-
-.board-card {
+.plan-card {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 250px;
-  width: 500px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  /* padding: 0px 100px; */
-  /* padding-left: 150px; */
+  height: 220px;
+  width: 480px;
+  /* min-width: 480px; */
   z-index: 0;
   position: relative;
 }
 
-/* board graphic */
+.plan > p {
+  margin: 0 20rem;
+}
 
-.wrap-board-graphic {
+/* >graphic */
+
+.graphic {
   width: 120px;
   height: 130px;
   position: absolute;
@@ -419,35 +371,34 @@ h1 {
   z-index: 90;
 }
 
-.board-graphic {
+.graphic__field {
   width: 120px;
   height: 130px;
-  padding: 60px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.board-graphic-text {
+.graphic__text {
   text-align: center;
   z-index: 99;
 }
 
-.board-graphic-text .size1 {
+.graphic__text .size1 {
   /* height: 100%; */
   font-size: 1.3rem;
 }
-.board-graphic-text .size2 {
+.graphic__text .size2 {
   /* height: 100%; */
   font-size: 2.4rem;
 }
-.board-graphic-text .size3 {
+.graphic__text .size3 {
   /* height: 100%; */
   font-size: 2.4rem;
 }
 
-.board-graphic-tail {
+.graphic__element-p1 {
   position: absolute;
   left: 0px;
   top: 93px;
@@ -455,8 +406,7 @@ h1 {
   height: 50px;
   z-index: 0;
 }
-
-.board-graphic-tail-p2 {
+.graphic__element-p2 {
   position: absolute;
   left: 30px;
   top: 130px;
@@ -464,7 +414,7 @@ h1 {
   height: 30px;
 }
 
-/* tot hier */
+/* >card */
 
 .card-item {
   display: flex;
@@ -473,20 +423,22 @@ h1 {
   position: relative;
 }
 
-.item-circle {
-  height: 30px;
-  width: 30px;
+.card-item__circle {
+  height: 24px;
+  width: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   position: absolute;
-  top: 10px;
+  top: 4px;
   left: 32px;
 }
 
+/* >icon sizing */
+
 .card-item i {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
 }
 
 .fa-clock {
@@ -495,51 +447,49 @@ h1 {
 .fa-clock::before {
 }
 
-.wrap-item-text {
-  margin-left: 20px;
-  vertical-align: baseline;
-  height: 100%;
+/* >card */
+
+.card-item__text {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
-  /* background-color: green; */
+  height: 100%;
+  display: flex;
   height: 2rem;
-  /* height: 10px; */
 }
 
-.wrap-item-text p {
-  /* background-color: yellow; */
+.card-item__text h3 {
+  line-height: 1;
+  margin: 0 0.2rem;
+  margin-left: 1.2rem;
 }
 
-.wrap-item-text h3 {
-  vertical-align: bottom;
-}
+/* >field */
 
-/* field */
-
-.wrap-field {
+.field-white {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  width: 560px;
+  padding: 0.8rem;
+  /* width: 560px; */
   /* padding: 8px 40px; */
   /* margin-top: 8px;
   margin-bottom: 8px; */
   position: absolute;
-  top: 800px;
-  transform-origin: center center;
+  transform: translate(-0%, -0%);
+  bottom: 0px;
 }
 
-.wrap-field .btn-full {
+.field-white > .btn-full {
   position: absolute;
-  top: 80px;
-  /* margin: 20px; */
+  transform: translate(-50%, -50%);
+  left: 0px;
+  top: 0px;
 }
 
-.wrap-field p {
+.field-white p {
   margin-top: 13px;
   margin-bottom: 8px;
   padding: 0px 80px;
@@ -849,6 +799,10 @@ label p {
 
 /* add info */
 
+/* ---------- */
+/* Add info */
+/* ---------- */
+
 .add-info {
   display: flex;
   flex-direction: column;
@@ -867,8 +821,13 @@ ul {
   list-style-position: outside;
 }
 
-.custom_list li {
-  color: #b2222a;
+.unique-list li {
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
+.unique-list .li-1 {
+  color: #fff;
   line-height: 2em;
   padding-left: 0px;
   padding-top: 5px;
@@ -876,11 +835,54 @@ ul {
   font-size: 14px;
   list-style-type: none;
   list-style: none;
-  list-style-position: outside;
+  list-style-position: inside;
 }
-.custom_list li:before {
+.unique-list .li-1:before {
   font-family: 'Font Awesome 5 Free';
-  content: '\f105';
+  content: '\f7c0';
+  display: inline-block;
+  /* padding-right: 3px; */
+  vertical-align: middle;
+  font-weight: 900;
+  margin-left: -16px; /* this is to move the icon left */
+  padding-right: 10px;
+}
+
+.unique-list .li-2 {
+  color: #fff;
+  line-height: 2em;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  list-style-type: none;
+  list-style: none;
+  list-style-position: inside;
+}
+.unique-list .li-2:before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f292';
+  display: inline-block;
+  /* padding-right: 3px; */
+  vertical-align: middle;
+  font-weight: 900;
+  margin-left: -16px; /* this is to move the icon left */
+  padding-right: 10px;
+}
+.unique-list .li-3 {
+  color: #fff;
+  line-height: 2em;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+  list-style-type: none;
+  list-style: none;
+  list-style-position: inside;
+}
+.unique-list .li-3:before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f164';
   display: inline-block;
   /* padding-right: 3px; */
   vertical-align: middle;
@@ -897,6 +899,7 @@ li hr {
 
 .wrap-colum {
   margin: 15px;
+  position: relative;
 }
 
 .row {
@@ -916,7 +919,9 @@ li hr {
   /* margin: 60px; */
 }
 
-/* contact */
+/* ---------- */
+/* Contact */
+/* ---------- */
 
 .contact {
   display: flex;
@@ -925,6 +930,14 @@ li hr {
   /* height: 33vh; */
   background-color: #b2222a;
   margin: ;
+}
+
+.contact p {
+  font-size: 0.9rem;
+}
+
+.contact li {
+  font-size: 0.9rem;
 }
 
 .contact h3 {
@@ -941,6 +954,12 @@ li hr {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
+  /* position: absolute;
+  top: 0px;
+  left: 0px; */
+  padding: 0px 20px;
+  padding-left: 50px;
 }
 
 .contact-column {
@@ -949,51 +968,59 @@ li hr {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  padding: 15px;
+  padding: 5px;
   margin: 0px 10px;
 }
 
-.blue-column {
+/* ---------- */
+/* Footer */
+/* ---------- */
+
+.site-footer {
+  /* display: flex; */
 }
 
-.green-column {
-}
-
-.footer {
-  height: 14vh;
-  background-color: #333333;
-}
-
-.footer-info {
+.wrap-footer {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  width: 100%;
 }
 
-.p-tiny {
-  font-size: 0.8rem;
-}
-
-a {
-  font-size: 0.8rem;
-}
-
-.vl {
-  font-weight: 500;
-}
-
-.wrap-logo3,
-.wrap-logo4 {
-  width: 20%;
-  height: auto;
+.footer-logos {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
+  width: 25%;
 }
 
-.wrap-logo3 img,
-.wrap-logo4 img {
+.footer-links {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+}
+
+.wrap-copy p {
+  display: block;
+  width: 100%;
+}
+
+.footer-links a {
+  color: #fff;
+}
+
+.footer-links .fs-micro {
+  color: #fff;
+}
+
+/* img styling */
+
+.footer-links img {
   width: 50px;
   height: auto;
-  margin: 40px;
+}
+
+.footer-logos img {
+  height: 40px;
+  width: auto;
 }
