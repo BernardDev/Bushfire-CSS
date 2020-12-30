@@ -1,0 +1,76 @@
+@mixin field {
+  border: none;
+  position: relative;
+  max-width: 50vw;
+}
+
+@mixin btn-empty {
+  border: 2px solid $red;
+  position: relative;
+  max-width: 50vw;
+}
+
+@mixin btn-full {
+  border: none;
+  position: relative;
+  max-width: 50vw;
+}
+
+hr {
+  width: 100%;
+  color: $white;
+}
+
+.btn {
+  max-width: 50vw;
+  @include rounded;
+  &--primary {
+    color: $white;
+    background-color: $red;
+  }
+  &--transparent {
+    color: $red;
+    border: 1px solid $red;
+    background-color: $alpha;
+  }
+  &__text {
+    font-weight: 700;
+    &--grey {
+      color: $grey;
+    }
+  }
+}
+
+.field {
+  position: relative;
+  width: 35vw;
+  // min-width: 50vw;
+  // max-width: 50vw;
+  padding: 0 42px;
+  @include rounded;
+  @include flex-column-center;
+  &--primary {
+    color: $white;
+    background-color: $red;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0 0.8rem;
+  }
+  &__circle {
+    @include circle;
+    @include center;
+    position: absolute;
+    &--yellow {
+      width: 50px;
+      height: 50px;
+      top: -10px;
+      left: -20px;
+      background-color: $yellow;
+    }
+    &__text {
+      color: $red;
+    }
+  }
+}

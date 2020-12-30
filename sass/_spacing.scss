@@ -1,0 +1,57 @@
+$space-xs: 0.5rem;
+$space-s: 0.75rem;
+$space-m: 1rem;
+$space-l: 1.5rem;
+$space-xl: 2rem;
+
+.m-1 {
+  margin: $space-xs;
+}
+.m-2 {
+  margin: $space-s;
+}
+.m-3 {
+  margin: $space-m;
+}
+.m-4 {
+  margin: $space-l;
+}
+.m-5 {
+  margin: $space-xl;
+}
+
+//
+
+.mt-1 {
+  margin-top: $space-xs;
+}
+.mt-2 {
+  margin-top: $space-s;
+}
+.mt-3 {
+  margin-top: $space-m;
+}
+.mt-4 {
+  margin-top: $space-l;
+}
+.mt-5 {
+  margin-top: $space-xl;
+}
+
+//
+
+.mb-1 {
+  margin-bottom: $space-xs;
+}
+.mb-2 {
+  margin-bottom: $space-s;
+}
+.mb-3 {
+  margin-bottom: $space-m;
+}
+.mb-4 {
+  margin-bottom: $space-l;
+}
+.mb-5 {
+  margin-bottom: $space-xl;
+}

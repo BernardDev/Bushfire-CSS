@@ -1,0 +1,16 @@
+/* ---------- */
+/* >header */
+/* ---------- */
+
+.header {
+  @include center;
+  position: relative;
+  height: 280px;
+  width: auto;
+  overflow: hidden;
+  background: url('/img/wildfire.jpg') no-repeat center;
+  background-size: cover;
+  &__caption {
+    color: $white;
+  }
+}

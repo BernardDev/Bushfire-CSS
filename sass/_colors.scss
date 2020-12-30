@@ -1,0 +1,22 @@
+/* ---------------- */
+/* >colors  */
+/* ---------------- */
+
+$dark-grey: #333;
+$white: #fff;
+$off-white1: #eee;
+$off-white2: #f7f7f7;
+$red: #b2222a;
+$sand: #dbd2cb;
+$light-grey: #dcdcdc;
+$yellow: #fed731;
+$alpha: rgba(0, 0, 0, 0);
+$grey: #565656; // only one with also text
+
+.dark-grey {
+  color: $dark-grey;
+}
+
+.grey {
+  color: $grey;
+}

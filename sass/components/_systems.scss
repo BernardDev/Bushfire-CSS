@@ -1,0 +1,30 @@
+/* ---------- */
+/* Systems */
+/* ---------- */
+
+.systems {
+  @include flex-column-around;
+  background-color: $sand;
+  padding-bottom: 50px;
+  padding-top: 60px;
+  &__field {
+    @include flex-column-center;
+    position: relative;
+    text-align: center;
+    &__caption {
+    }
+  }
+  &__paragraph {
+    text-align: center;
+  }
+  &__button {
+    @include btn-empty;
+    @include rounded;
+    background-color: $alpha;
+    &__caption {
+    }
+  }
+}
+
+.icon--download {
+}

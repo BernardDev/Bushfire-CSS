@@ -8,322 +8,336 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&family=Ubuntu:wght@300;400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,600&family=Ubuntu:wght@300;400;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/all.min.css" />
   <link rel="stylesheet" href="/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/all.min.css" />
   <title>Wildfire - Fire Watch</title>
 </head>
 
 <body>
-  <div class="background bc-dark-grey">
+  <div class="background">
     <div class="container">
       <!-- >navbar -->
-      <nav class="navbar bc-white">
-        <div class="navbar__logo">
-          <img src="/img/logo1.png" alt="logo1" />
+      <nav class="navbar">
+        <div class="navbar__logo__wrap">
+          <div class="navbar__logo--gov">
+            <img class="" src="/img/logo1.png" alt="logo1" />
+          </div>
         </div>
-        <div class="navbar__links">
-          <a class="tc-dark-grey fs-tiny " href="#">Accessibility</a>
-          <p class="fs-micro">|</p>
-          <a class="nav-link tc-dark-grey fs-tiny " href="#">Contact</a>
-          <img src="/img/logo2.png" alt="logo2" />
+        <div class="navbar__navlinks">
+          <a class="navbar__navlinks__link a--navlink" href="#">Accessibility</a>
+          <p class="navbar__navlinks__line">|</p>
+          <a class="navbar__navlinks__link a--navlink" href="#">Contact</a>
+          <div class="navbar__logo--DFES">
+            <img class="" src="/img/logo2.png" alt="logo2" />
+          </div>
         </div>
       </nav>
       <!-- >header -->
       <header class="header">
-        <h1 class="tc-white">
+        <h1 class="header__caption">
           YOU CAN'T OUTRUN IT OR OUTLAST IT <br />
-          <span class="tc-white fw-b">SO TAKE 5 MINUTES TO OUTSMART IT</span>
+          <span class="bold">SO TAKE 5 MINUTES TO OUTSMART IT</span>
         </h1>
-        <div class="header__wrap">
-        </div>
+        <!-- <div class="header__wrap">
+        </div> -->
       </header>
+
       <!-- >plan -->
-      <section class="plan bc-grey">
-        <h2 class="tc-grey ls">
+      <section class="plan">
+        <h2 class="plan__caption m-4">
           IN A BUSHFIRE EVERY 5 MINUTES COUNTS <br />
-          <span class="fw-b">ESPECIALLY YOUR NEXT FIRE MINUTES</span>
+          <span class="bold">ESPECIALLY YOUR NEXT FIRE MINUTES</span>
         </h2>
-        <p>
-          Nulla sit amet vehicula lectus. Morbi aliquet justo eget augue blandit, vitae dictum tellus feugiat. In
-          sollicitudin in orci eu condimentum. Repellendus necessitatibus laborum odit.
+        <p class="plan__paragraph">
+          Nulla sit amet vehicula lectus.
+          Morbi aliquet justo eget augue blandit,
         </p>
-        <div class="plan-card c-round bc-white">
+        <p class="plan__paragraph">Vitae dictum tellus feugiat. </p>
+        <p class="plan__paragraph mb-5">In sollicitudin in orci eu condimentum.
+          Repellendus necessitatibus laborum odit.</p>
+
+        <div class="plan__card">
+
           <div class="graphic">
-            <div class="graphic__field bc-red c-round">
-              <p class="graphic__text tc-white fw-b"> <span class="size1">
-                  5 MINUTE </span> <br><span class="size2">FIRE</span><br><span class="size3">CHAT</span></p>
+            <div class="graphic__field">
+              <p class="graphic__paragraph"> <span class="graphic-p--size1">
+                  5 MINUTE </span> <br><span class="graphic-p--size2">FIRE</span><br><span
+                  class="graphic-p--size3">CHAT</span></p>
             </div>
-            <div class="graphic__element-p1 bc-red c-circle"></div>
-            <div class="graphic__element-p2 bc-white c-round-s"></div>
+            <div class="graphic__mask graphic__mask--1"></div>
+            <div class="graphic__mask graphic__mask--2"></div>
           </div>
-          <div class="card-item">
-            <i class="fas fa-clock fa-3x tc-dark-grey"></i>
-            <div class="card-item__circle bc-red c-circle">
-              <p class="fs-g-circle-small tc-white">1</p>
+
+          <div class="plan__card__item">
+            <i class="fas fa-clock icon--plan__card"></i>
+            <div class="card__item__circle">
+              <p class="item__circle__paragraph">1</p>
             </div>
-            <div class="card-item__text">
-              <h3 class="tc-red fw-b">WHEN</h3>
-              <p>will you know to leave?</p>
-            </div>
-          </div>
-          <hr />
-          <div class="card-item">
-            <i class="fas fa-map-marked fa-3x tc-dark-grey"></i>
-            <div class="card-item__circle bc-red c-circle">
-              <p class="fs-g-circle-small tc-white">2</p>
-            </div>
-            <div class="card-item__text">
-              <h3 class="tc-red fw-b">WHERE</h3>
-              <p>way whill you go?</p>
+            <div class="card__item__text">
+              <h3 class="item__text__caption">WHEN</h3>
+              <p class="item__text__paragraph">will you know to leave?</p>
             </div>
           </div>
           <hr />
-          <div class="card-item">
-            <i class="fas fa-route fa-3x tc-dark-grey"></i>
-            <div class="card-item__circle bc-red c-circle">
-              <p class="fs-g-circle-small tc-white">3</p>
+          <div class="plan__card__item">
+            <i class="fas fa-map-marked icon--plan__card"></i>
+            <div class="card__item__circle ">
+              <p class="item__circle__paragraph">2</p>
             </div>
-            <div class="card-item__text">
-              <h3 class="tc-red fw-b">WHICH</h3>
-              <p>will you know to leave</p>
+            <div class="card__item__text">
+              <h3 class="item__text__caption" class="">WHERE</h3>
+              <p class="item__text__paragraph">way whill you go?</p>
+            </div>
+          </div>
+          <hr />
+          <div class="plan__card__item">
+            <i class="fas fa-route icon--plan__card"></i>
+            <div class="card__item__circle">
+              <p class="item__circle__paragraph">3</p>
+            </div>
+            <div class="card__item__text">
+              <h3 class="item__text__caption">WHICH</h3>
+              <p class="item__text__paragraph">will you know to leave</p>
             </div>
           </div>
         </div>
-        <div class="field-white bc-white c-round">
-          <p class="">
+
+        <div class="plan__field">
+          <p class="plan__field__paragraph">
             Lorem ipsum dolor sit amet consectetur, <br />adipisicing elit. Qui
             repellendus necessitatibus laborum odit.
           </p>
-          <button class="btn-full bc-red c-round-s tc-white " type="button">
-            <h3 class="fw-b">SKIP TO CHOOSE YOUR MORE DETAILED FIRE PLAN</H3>
-            <div class="wrap-arrow-down c-circle bc-yellow">
-              <i class="fas fa-angle-down  tc-red "></i>
+          <button class="plan__field__button btn btn--primary" type="button">
+            <h3 class="btn__text">SKIP TO CHOOSE YOUR MORE DETAILED FIRE PLAN</H3>
+            <div class="field__button__circle circle">
+              <i class="fas fa-angle-down icon--plan__field"></i>
             </div>
           </button>
         </div>
       </section>
-      <section class="video bc-broken-white">
-        <iframe class="youtube" width="592" height="333" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+
+      <section class="video">
+        <iframe class="video__youtube" width="592" height="333" src="https://www.youtube.com/embed/tgbNymZ7vqY">
         </iframe>
-        <button class="btn-empty c-round-s bc-transparant" type="button">
-          <h3 class="fw-b tc-red">DOWNLOAD VIDEO TRANSCRIPT <span class="tc-grey">(PDF 267KB)</span> <i
-              class="fas fa-file-download"></i></H3>
+        <button class="btn btn--transparent" type="button">
+          <h3 class="btn__text">DOWNLOAD VIDEO TRANSCRIPT <span class="btn__text--grey">(PDF
+              267KB)</span> <i class="fas fa-file-download icon--download"></i></H3>
         </button>
       </section>
-      <section class="warning-systems bc-sand">
-        <div class="field-full bc-red c-round-s tc-white " type="button">
-          <h2 class="tc-white h2-med">KNOW THE BUSHFIRE WARNING SYSTEMS AND HOW TO USE & RESPOND TO THEM</h2>
-          <div class="field-graphic bc-yellow c-circle">
-            <h2 class="tc-red fs-med fw-b"><span>
+      <section class="systems">
+        <div class="field field--primary">
+          <!-- field = same as button in size -->
+          <h3 class="field__text">KNOW THE BUSHFIRE WARNING SYSTEMS AND HOW TO USE & RESPOND TO THEM</h3>
+          <div class="field__circle field__circle--yellow">
+            <h2 class="field__circle__text"><span class="bold">
                 !</span>
             </h2>
           </div>
         </div>
-        <p class="systems-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-          nesciunt velit quia sapiente facere aliquid illo ad at.
+        <p class="systems__paragraph mt-4">
+          Acus id posuere luctus, tortor magna interdum ex, non sagittis nisl neque eget purus.
         </p>
-        <button class="btn-empty c-round-s bc-transparant" type="button">
-          <h3 class="fw-b tc-red">DOWNLOAD BUSHFIRE WARNING SYSTEMS<span class="tc-grey">(PDF 267KB)</span> <i
-              class="fas fa-file-download"></i></h3>
+        <p class="systems__paragraph mb-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+        <!-- <button class="systems__button" type="button">
+          <h3 class="systems__button__caption">DOWNLOAD BUSHFIRE WARNING SYSTEMS<span class="tc-grey">(PDF 267KB)</span>
+            <i class="fas fa-file-download icon--download"></i>
+          </h3>
+        </button> -->
+        <button class="btn btn--transparent" type="button">
+          <h3 class="btn__text">DOWNLOAD BUSHFIRE WARNING SYSTEMS<span class="btn__text--grey">(PDF 267KB)</span>
+            <i class="fas fa-file-download icon--download"></i>
+          </h3>
         </button>
       </section>
       <section class="steps">
-        <h2 class="steps-title">Simple steps <br><span class="fw-b">To Prepare For Bush Fires </span></h2>
-        <p class="steps-text">ellentesque maximus ornare vestibulum. Orci varius natoque penatibus et magnis dis
-          parturient montes, nascetur ridiculus mus.</p>
+        <h2 class="steps__caption">Simple steps <br><span class="bold">To Prepare For Bush Fires </span></h2>
+        <p class="steps__paragraph mt-2">ellentesque maximus ornare vestibulum. Orci varius natoque penatibus et magnis
+          dis
+          ornare.
+        </p>
+        <p class="steps__paragraph">porttitor vel porta nec, tincidunt in libero praesent nisl porttitor
+          neque.
+        </p>
       </section>
       <!-- hieeeeeer -->
-      <section class="form bc-broken-white">
-        <div class="field-full bc-red c-round-s tc-white " type="button">
-          <h2 class="tc-white h2-med">CHOOSE YOUR BUSHFIRE PLAN</H2>
-          <div class="field-graphic bc-yellow c-circle">
-            <h2 class="tc-red fs-med fw-b"><span>
+      <section class="form">
+        <div class="field field--primary mb-5">
+          <h2 class="field__text">CHOOSE YOUR BUSHFIRE PLAN</H2>
+          <div class="field__circle field__circle--yellow">
+            <h2 class="field__circle__text"><span>
                 1</span>
             </h2>
           </div>
         </div>
-        <p class="form-intro">
+        <p class="form__paragraph mb-2">
           Duis consectetur, magna eget sodales vulputate, lorem diam sagittis massa, in egestas lacus ex ut odio.
-          Curabitur lobortis, purus vitae euismod aliquet.
+          Curabitur lobortis.
         </p>
-        <div class="wrap-form-elements">
-          <div class="field-full c-round bc-brokener-white">
-            <div class="index-graphic bc-red">
-              <h3 class="tc-white c-circle fw-b">Q1</h3>
+        <p class="form__paragraph mb-4">
+          Duis consectetur, magna eget sodales vulputate.
+        </p>
+        <div class="form__board">
+          <div class="form__board__card mb-4">
+            <div class="form__board__card__circle">
+              <h3 class="form__board__card__circle__caption">Q1</h3>
             </div>
-            <p class="form-text">Nunc quis ligula et nisl commodo semper. Donec id
+            <p class="form__board__card__paragraph">Nunc quis ligula et nisl commodo semper. Donec id
               vulputate felis, ac elementum neque?
             </p>
-            <div class="wrap-checkers">
-              <label class="ul-q-item">
-                <input type="radio" class="option-input radio" name="example1" />
-                <p class="fw-t">NO</p>
+            <div class="checkboxes">
+              <label class="checkboxes__checkbox">
+                <input type="radio" class="checkboxes__checkbox__input radio" name="example1" />
+                <p class="checkboxes__text">NO</p>
               </label>
-              <label class="ul-q-item">
-                <input type="radio" class="option-input radio" name="example1" />
-                <p class="fw-t" p>UNSURE</p>
+              <label class="checkbox">
+                <input type="radio" class="checkboxes__checkbox__input radio" name="example1" />
+                <p class="checkboxes__text" p>UNSURE</p>
               </label>
-              <label class="ul-q-item">
-                <input type="radio" class="option-input radio" name="example1" />
-                <p class="fw-t">YES</p>
-              </label>
-            </div>
-          </div>
-          <!-- repeat -->
-          <div class="field-full c-round bc-brokener-white">
-            <div class="index-graphic bc-red">
-              <h3 class="tc-white c-circle fw-b">Q2</h3>
-            </div>
-            <p class="form-text">Maecenas sodales orci sed augue tincidunt aliquam. Nam ut nunc eget metus porta
-              porttitor. Duis semper eu massa a varius?</p>
-            <div class="wrap-checkers">
-              <label class="ul-q-item">
-                <input type="radio" class="option-input radio" name="example2" />
-                <p class="fw-t">NO</p>
-              </label>
-              <label class="ul-q-item">
-                <input type="radio" class="option-input radio" name="example2" />
-                <p class="fw-t" p>UNSURE</p>
-              </label>
-              <label class="ul-q-item">
-                <input type="radio" class="option-input radio" name="example2" />
-                <p class="fw-t">YES</p>
-              </label>
-            </div>
-          </div>
-          <div class="field-full c-round bc-brokener-white">
-            <div class="index-graphic bc-red">
-              <h3 class="tc-white c-circle fw-b">Q3</h3>
-            </div>
-            <p class="form-text">Vivamus sodales dui urna, a ornare massa posuere non?</p>
-            <div class="wrap-checkers">
-              <label class="ul-q-item">
-                <input type="radio" class="option-input radio" name="example3" />
-                <p class="fw-t">NO</p>
-              </label>
-              <label class="ul-q-item">
-                <input type="radio" class="option-input radio" name="example3" />
-                <p class="fw-t" p>UNSURE</p>
-              </label>
-              <label class="ul-q-item">
-                <input type="radio" class="option-input radio" name="example3" />
-                <p class="fw-t">YES</p>
+              <label class="checkbox">
+                <input type="radio" class="checkboxes__checkbox__input radio" name="example1" />
+                <p class="checkboxes__text">YES</p>
               </label>
             </div>
           </div>
           <!-- repeat END -->
         </div>
+        <button class="btn btn--transparent" type="button">
+          <h3 class="btn__text">CLICK TO FIND YOUR BUSHFIRE PLAN </h3>
+        </button>
       </section>
-      <section class="add-info">
-        <h3 class="tc-dark-grey">
-          <span class="fw-b">ADDITIONAL INFORMATION</span> AND OTHER LINKS
+
+      <section class="info">
+        <h3 class="info__caption">
+          <span class="bold">ADDITIONAL INFORMATION</span> AND OTHER LINKS
         </h3>
-        <div class="wrap-column">
-          <div class='row'>
-            <div class='column'>
-              <ul class='blue-column'>
-                <ul class="custom_list">
-                  <li class="arrow-right"><a class="tc-dark-grey" href="#">Download Bushfire Risk and Danger <span
-                        class="tc-grey">(PDF - 32KB)
-                      </span></a>
-                    <hr />
-                  </li>
-                  <!-- duplicates -->
-                  <li class="arrow-right"><a class="tc-dark-grey" href="#">Download Bushfire Risk and Danger <span
-                        class="tc-grey">(PDF - 32KB)
-                      </span></a>
-                    <hr />
-                  </li>
-                  <li class="arrow-right"><a class="tc-dark-grey" href="#">Download Bushfire Risk and Danger <span
-                        class="tc-grey">(PDF - 32KB)
-                      </span></a>
-                    <hr />
-                  </li>
-                  <li class="arrow-right"><a class="tc-dark-grey" href="#">Download Bushfire Risk and Danger <span
-                        class="tc-grey">(PDF - 32KB)
-                      </span></a>
-                  </li>
-                </ul>
+        <div class="info__columns">
+          <div class='info__columns__row'>
+            <div class='info__columns__row__column'>
+              <ul>
+                <li class="arrow icon--arrow-right"><a class="dark-grey" href="#">Download Bushfire
+                    Risk and
+                    Danger
+                    <br /><span class="grey">(PDF - 32KB)
+                    </span></a>
+                  <!-- using if else statement in sass, bgc or tc -->
+                  <hr />
+                </li>
+                <!-- duplicates -->
+                <li class="arrow icon--arrow-right"><a class="dark-grey" href="#">Download Bushfire Risk and
+                    Danger
+                    <br /><span class="grey">(PDF - 32KB)
+                    </span></a>
+                  <hr />
+                </li>
+                <li class="arrow icon--arrow-right"><a class="dark-grey" href="#">Download Bushfire Risk and
+                    Danger
+                    <br /><span class="grey">(PDF - 32KB)
+                    </span></a>
+                  <hr />
+                </li>
+                <li class="arrow icon--arrow-right"><a class="dark-grey" href="#">Download Bushfire Risk and
+                    Danger
+                    <br /><span class="grey">(PDF - 32KB)
+                    </span></a>
+                </li>
+              </ul>
             </div>
-            <div class='column'>
-              <div class='green-column'>
-                <ul class="custom_list">
-                  <li class="arrow-right"><a class="tc-dark-grey" href="#">Download Bushfire Risk and Danger <span
-                        class="tc-grey">(PDF - 32KB)
-                      </span></a>
-                    <hr />
-                  </li>
-                  <li class="arrow-right"><a class="tc-dark-grey" href="#">Download Bushfire Risk and Danger <span
-                        class="tc-grey">(PDF - 32KB)
-                      </span></a>
-                    <hr />
-                  </li>
-                  <li class="arrow-right"><a class="tc-dark-grey" href="#">Download Bushfire Risk and Danger <span
-                        class="tc-grey">(PDF - 32KB)
-                      </span></a>
-                  </li>
+            <div class='info__columns__row__column'>
+              <ul>
+                <li class="arrow icon--arrow-right"><a class="dark-grey" href="#">Download Bushfire Risk
+                    and Danger <br /><span class="grey">(PDF - 32KB)
+                    </span></a>
+                  <hr />
+                </li>
+                <li class="arrow icon--arrow-right "><a class="dark-grey" href="#">Download Bushfire Risk
+                    and Danger <br /><span class="grey">(PDF - 32KB)
+                    </span></a>
+                  <hr />
+                </li>
+                <li class="arrow icon--arrow-right "><a class="dark-grey" href="#">Download Bushfire Risk
+                    and Danger <br /><span class="grey">(PDF - 32KB)
+                    </span></a>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </section>
+      <section class="contact">
+        <h3 class="contact__caption mb-4">
+          <span class="bold">MY LOCAL FIRE INFORMATION</span>AND CONTACTS
+        </h3>
+        <div class="contact__columns column">
+          <div class='contact__columns__row row'>
+            <div class='contact__columns__row__column'>
+              <i class="fas fa-ambulance icon--contact"></i>
+              <div>
+                <p class="contact__columns__row__column__paragraph">Donec eu lorem at turpis consequat dapibus nec</p>
+                <p class="contact__columns__row__column__paragraph"> 000</p>
+              </div>
+            </div>
+            <div class='contact__columns__row__column'>
+              <i class="fas fa-microphone"></i>
+              <div>
+                <p class='contact__columns__row__column__paragraph mb-2'>Lorem ipsum dolor sit amet, consectetur
+                  adipiscing
+                  elit. Aenean
+                  varius euismod ligula,
+                  non
+                  ultricies.
+                </p>
+                <ul class='contact__columns__row__column__list'>
+                  <li class="contact__columns__row__column__list__item li--1">Visit Emergency WA Website</li>
+                  <li class="contact__columns__row__column__list__item li--2">Visit the DFES Twitter Page</li>
+                  <li class="contact__columns__row__column__list__item li--3 ">Visit the DEFS Facebook Page</li>
                 </ul>
+              </div>
+            </div>
+            <div class='contact__columns__row__column'>
+              <i class="fas fa-info-circle tc-white"></i>
+              <div>
+                <p class='contact__columns__row__column__paragraph'>Sed pulvinar gravida ligula. ellentesque maximus
+                  ornare vestibulum. Orci varius natoque.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="contact">
-        <h3 class="wrap-title tc-white">
-          <span class="fw-b">MY LOCAL FIRE INFORMATION</span>AND CONTACTS
-        </h3>
-        <div class="wrap-column tc-white">
-          <div class='contact-row'>
-            <i class="fas fa-ambulance tc-white"></i>
-            <div class='contact-column'>
-              <p>Donec eu lorem at turpis consequat dapibus nec</p>
-            </div>
-            <i class="fas fa-microphone tc-white"></i>
-            <div class='contact-column unique'>
-              <p class='unique'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius euismod ligula,
-                non
-                ultricies.
-              <ul class='unique-list'>
-                <li class="li-1">Visit Emergency WA Website</li>
-                <li class="li-2">Visit the DFES Twitter Page</li>
-                <li class="li-3">Visit the DEFS Facebook Page</li>
-              </ul>
-              </p>
-            </div>
-            <i class="fas fa-info-circle tc-white"></i>
-            <div class='contact-column'>
-              <p>Sed pulvinar gravida ligula.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="site-footer bc-dark-grey">
-        <div class="wrap-footer">
-          <div class="footer-logos">
+      <footer class="footer">
+        <!-- <div class="wrap__footer"> -->
+        <div class="footer__logos">
+          <div class="footer__logo3">
             <img src="/img/logo3.png" alt="logo3" />
+          </div>
+          <div class="footer__logo4">
             <img src="/img/logo4.png" alt="logo4" />
           </div>
-          <div class="footer-links tc-white ">
-            <a class="fs-tiny" href="#">Home</a>
-            <p class="fs-micro">|</p>
-            <a class="fs-tiny" href="#">Copyright</a>
-            <p class="fs-micro">|</p>
-            <a class="fs-tiny" href="#">Privacy Policy</a>
-            <p class="fs-micro">|</p>
-            <a class="fs-tiny" href="#">Contact</a>
-            <p class="fs-micro">|</p>
-            <a class="fs-tiny" href="#">Disclaimer</a>
-            <p class="fs-micro">|</p>
-            <a class="fs-tiny" href="#">Freedom of Information</a>
-            <img src="/img/logo2.png" alt="logo2">
-          </div>
         </div>
-        <div class="copy">
-          <p class="fs-micro">
+        <!-- <div class="footer__links"> -->
+        <a class="footer__links__link a--footlinks" href="#">Home</a>
+        <p class="footer__links__line">|</p>
+        <a class="footer__links__link a--footlinks" href="#">Copyright</a>
+        <p class="footer__links__line">|</p>
+        <a class="footer__links__link a--footlinks" href="#">Privacy Policy</a>
+        <p class="footer__links__line">|</p>
+        <a class="footer__links__link a--footlinks" href="#">Contact</a>
+        <p class="footer__links__line">|</p>
+        <a class="footer__links__link a--footlinks" href="#">Disclaimer</a>
+        <p class="footer__links__line">|</p>
+        <a class="footer__links__link a--footlinks" href="#">Freedom of Information</a>
+        <!-- </div> -->
+        <div class="footer__logo2">
+          <img class="" src="/img/logo2.png" alt="logo2">
+        </div>
+        <!-- </div> -->
+        <div class="footer__copyrights">
+          <p class="copyrights">
             Copyrights
           </p>
         </div>

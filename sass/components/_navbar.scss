@@ -1,0 +1,46 @@
+/* ----------------- */
+/* >navbar */
+/* ----------------- */
+
+// image will always size to container
+
+.navbar {
+  padding: 15px 0;
+  @include flex-row-around;
+  background-color: $white;
+  width: 100%;
+  // height: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__logo {
+    &--gov {
+      margin-right: 20px;
+      height: 40px;
+    }
+
+    &--DFES {
+      margin-left: 20px;
+      width: auto;
+      height: 40px;
+    }
+  }
+
+  &__navlinks {
+    // width: 356px;
+    // width: 100%;
+    @include center;
+    &__link,
+    &__line {
+      margin-right: 20px;
+    }
+  }
+}
+
+.navbar__logo__wrap {
+  // width: 100%;
+  display: flex;
+  justify-content: center;
+  // width: 356px;
+}

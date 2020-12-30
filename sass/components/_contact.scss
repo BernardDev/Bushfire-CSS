@@ -1,0 +1,129 @@
+/* ---------- */
+/* Contact */
+/* ---------- */
+
+.contact {
+  @include flex-column-center;
+  color: $white;
+  background-color: $red;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  // width: 100vw;
+  /* height: 33vh; */
+  &__caption {
+  }
+  &__columns {
+    width: 100%;
+    &__row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      // width: 100%;
+      justify-content: center;
+      // align-items: center;
+      /* position: absolute;
+          top: 0px;
+          left: 0px; */
+      padding: 0px 20px;
+      &__column {
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: 220px;
+        // align-items: center;
+        // justify-content: center;
+        // flex-basis: 100%;
+        // flex: 1;
+        padding: 5px;
+        margin: 0px 10px;
+        &__paragraph {
+        }
+        &__list {
+          &__item {
+            list-style-position: inside;
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact__columns__row__column div {
+  // @include center;
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.icon--contact {
+  font-size: 1rem;
+}
+
+// list items
+
+.li--1 {
+  color: #fff;
+  line-height: 2em;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style-type: none;
+  list-style: none;
+  list-style-position: inside;
+}
+
+.li--1::before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f7c0';
+  display: inline-block;
+  /* padding-right: 3px; */
+  vertical-align: middle;
+  font-weight: 900;
+  margin-left: -16px; /* this is to move the icon left */
+  padding-right: 10px;
+}
+
+.li--2 {
+  line-height: 2em;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style-type: none;
+  list-style: none;
+  list-style-position: inside;
+}
+
+.li--2::before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f292';
+  display: inline-block;
+  /* padding-right: 3px; */
+  vertical-align: middle;
+  font-weight: 900;
+  margin-left: -16px; /* this is to move the icon left */
+  padding-right: 10px;
+}
+
+.li--3 {
+  color: #fff;
+  line-height: 2em;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style-type: none;
+  list-style: none;
+  list-style-position: inside;
+}
+
+.li--3::before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f164';
+  display: inline-block;
+  /* padding-right: 3px; */
+  vertical-align: middle;
+  font-weight: 900;
+  margin-left: -16px; /* this is to move the icon left */
+  padding-right: 10px;
+}

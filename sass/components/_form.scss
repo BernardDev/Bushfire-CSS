@@ -1,0 +1,174 @@
+/* ---------- */
+/* Form */
+/* ---------- */
+
+.form {
+  @include flex-column-around;
+  background-color: $light-grey;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  &__field {
+    @include field;
+    @include flex-column-center;
+    color: $white;
+    background-color: $red;
+    // unknown code
+    text-align: center;
+    height: 100px;
+    width: 600px;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    &__caption {
+    }
+    &__circle {
+      @include center;
+      @include circle;
+      background-color: $yellow;
+      width: 56px;
+      height: 56px;
+      position: absolute;
+      top: -10px;
+      left: -20px;
+      &__caption {
+        color: $red;
+      }
+    }
+  }
+  &__paragraph {
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+  }
+  &__board {
+    &__card {
+      @include rounded;
+      @include flex-column-center;
+      background-color: $off-white1;
+      width: 35vw;
+      align-items: flex-start;
+      position: relative;
+      padding: 38px;
+      &__paragraph {
+        text-align: left !important;
+        margin-bottom: 20px;
+      }
+      &__circle {
+        @include center;
+        @include circle;
+        background-color: $red;
+        width: 44px;
+        height: 44px;
+        position: absolute;
+        top: 32px;
+        left: -20px;
+        &__caption {
+          color: white;
+          font-weight: bold;
+          font-size: 1.3rem;
+        }
+      }
+    }
+    &__button {
+      background-color: $alpha;
+      @include btn-empty;
+      @include rounded;
+      &__caption {
+      }
+    }
+  }
+}
+
+/* checkbox styling */
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* margin: 0px 20px; */
+  &__text {
+    font-weight: 100;
+    font-size: 1rem;
+  }
+  &__checkbox {
+    &__input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      position: relative;
+      top: 13.33333px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 40px;
+      width: 40px;
+      transition: all 0.15s ease-out 0s;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      margin-right: 30px;
+      outline: none;
+      position: relative;
+      z-index: 1000;
+      //  -------;
+      border: 1px solid #dcdcdc;
+      &:hover {
+        background-color: #eeeeee;
+      }
+      &:checked {
+        background-color: $red;
+        &::before {
+          height: 40px;
+          width: 40px;
+          position: absolute;
+          content: '✔';
+          display: inline-block;
+          font-size: 26.66667px;
+          text-align: center;
+          line-height: 40px;
+        }
+        &::after {
+          -webkit-animation: click-wave 0.65s;
+          -moz-animation: click-wave 0.65s;
+          animation: click-wave 0.65s;
+          background-color: #b2222a;
+          content: '';
+          display: block;
+          position: relative;
+          z-index: 100;
+        }
+      }
+    }
+  }
+}
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+// fonts
+
+body label {
+  display: flex;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+label p {
+  margin-top: 12px;
+}
