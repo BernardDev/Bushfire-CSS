@@ -2,63 +2,65 @@
 /* Footer */
 /* ---------- */
 
-// .wrap__footer {
-//   @include center;
-//   width: 100%;
-// }
-
 .footer {
   padding: 0 10vw;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
   &__logos {
-    // @include center;
     display: flex;
   }
+
   &__links {
-    // @include center;
     display: flex;
-    // margin-right: 20px;
+
     &__link {
-      font-size: 0.6rem;
-      color: $white;
       padding: 0 5px;
-      // margin-right: 5px;
+      font-size: 0.7rem;
+      color: $white;
     }
+
     &__line {
       color: $white;
-      // margin-right: 5px;
     }
   }
+
   &__copyrights {
-    color: $white;
     margin-top: 10px;
+    color: $white;
     flex-basis: 100%;
   }
 }
 
-.copyrights {
-  font-size: 0.6rem;
+// logos
+
+.footer__logo {
+  display: inline-block;
+  &--3 {
+    margin-right: 20px;
+    height: 40px;
+  }
+
+  &--4 {
+    margin-right: 20px;
+    height: 40px;
+  }
+
+  &--2 {
+    height: 40px;
+  }
 }
 
-.footer__logo3 {
-  display: inline-block;
-  margin-right: 20px;
-  height: 40px;
+// fonts
+
+.a--footlinks {
+  font-size: 0.7rem;
 }
 
-.footer__logo4 {
-  display: inline-block;
-  margin-right: 20px;
-  height: 40px;
-}
-
-.footer__logo2 {
-  // margin-right: 20px;
-  height: 40px;
-  display: inline-block;
+.p--copyrights {
+  font-size: 0.7rem;
 }

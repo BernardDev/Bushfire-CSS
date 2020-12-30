@@ -4,61 +4,44 @@
 
 .contact {
   @include flex-column-center;
-  color: $white;
-  background-color: $red;
   padding-top: 30px;
   padding-bottom: 40px;
-  // width: 100vw;
-  /* height: 33vh; */
-  &__caption {
-  }
+  color: $white;
+  background-color: $red;
+
   &__columns {
     width: 100%;
+
     &__row {
+      padding: 0px 20px;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      // width: 100%;
       justify-content: center;
-      // align-items: center;
-      /* position: absolute;
-          top: 0px;
-          left: 0px; */
-      padding: 0px 20px;
+      flex-wrap: wrap;
+
       &__column {
-        text-align: left;
+        margin: 0px 10px;
+        padding: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        text-align: left;
         flex-basis: 220px;
-        // align-items: center;
-        // justify-content: center;
-        // flex-basis: 100%;
-        // flex: 1;
-        padding: 5px;
-        margin: 0px 10px;
-        &__paragraph {
+
+        &__paragraphs {
+          display: flex;
+          flex-direction: column;
+          width: 180px;
         }
         &__list {
           &__item {
-            list-style-position: inside;
             margin-left: 20px;
+            list-style-position: inside;
           }
         }
       }
     }
   }
-}
-
-.contact__columns__row__column div {
-  // @include center;
-  display: flex;
-  flex-direction: column;
-  width: 180px;
-}
-
-.icon--contact {
-  font-size: 1rem;
 }
 
 // list items
@@ -78,10 +61,9 @@
   font-family: 'Font Awesome 5 Free';
   content: '\f7c0';
   display: inline-block;
-  /* padding-right: 3px; */
   vertical-align: middle;
   font-weight: 900;
-  margin-left: -16px; /* this is to move the icon left */
+  margin-left: -16px;
   padding-right: 10px;
 }
 
@@ -99,10 +81,9 @@
   font-family: 'Font Awesome 5 Free';
   content: '\f292';
   display: inline-block;
-  /* padding-right: 3px; */
   vertical-align: middle;
   font-weight: 900;
-  margin-left: -16px; /* this is to move the icon left */
+  margin-left: -16px;
   padding-right: 10px;
 }
 
@@ -121,9 +102,8 @@
   font-family: 'Font Awesome 5 Free';
   content: '\f164';
   display: inline-block;
-  /* padding-right: 3px; */
   vertical-align: middle;
   font-weight: 900;
-  margin-left: -16px; /* this is to move the icon left */
+  margin-left: -16px;
   padding-right: 10px;
 }

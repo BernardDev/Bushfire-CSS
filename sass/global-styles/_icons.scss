@@ -1,0 +1,37 @@
+//plan
+.icon--plan__card {
+  color: $grey;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+//contact
+.icon--contact {
+  font-size: 1rem;
+}
+
+//additional info
+
+.icon--arrow-right {
+  color: #b2222a;
+  line-height: 2em;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style-type: none;
+  list-style: none;
+  list-style-position: outside;
+}
+.icon--arrow-right:before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f105';
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  margin-left: -16px;
+  padding-right: 10px;
+}
+
+.icon--download {
+  font-size: 1.2rem;
+}

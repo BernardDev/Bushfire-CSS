@@ -3,16 +3,11 @@
 /* ---------- */
 
 .steps {
+  padding-top: 50px;
+  padding-bottom: 80px;
   background-color: $white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 80px;
   text-align: center;
-  &__caption {
-  }
-  &__paragraph {
-    /* margin: 30px 100px; */
-  }
 }

@@ -4,23 +4,21 @@
 
 .form {
   @include flex-column-around;
-  background-color: $light-grey;
   padding-top: 50px;
   padding-bottom: 20px;
+  background-color: $light-grey;
+
   &__field {
-    @include field;
     @include flex-column-center;
+    text-align: center;
+    padding: 10px;
     color: $white;
     background-color: $red;
-    // unknown code
-    text-align: center;
     height: 100px;
     width: 600px;
     border-radius: 20px;
-    padding: 10px;
     position: relative;
-    &__caption {
-    }
+
     &__circle {
       @include center;
       @include circle;
@@ -40,6 +38,7 @@
     margin-right: 40px;
     text-align: center;
   }
+
   &__board {
     &__card {
       @include rounded;
@@ -49,10 +48,12 @@
       align-items: flex-start;
       position: relative;
       padding: 38px;
+
       &__paragraph {
         text-align: left !important;
         margin-bottom: 20px;
       }
+
       &__circle {
         @include center;
         @include circle;
@@ -62,6 +63,7 @@
         position: absolute;
         top: 32px;
         left: -20px;
+
         &__caption {
           color: white;
           font-weight: bold;
@@ -71,10 +73,7 @@
     }
     &__button {
       background-color: $alpha;
-      @include btn-empty;
       @include rounded;
-      &__caption {
-      }
     }
   }
 }
@@ -86,12 +85,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  /* margin: 0px 20px; */
+
   &__text {
     font-weight: 100;
     font-size: 1rem;
   }
+
   &__checkbox {
+    display: flex;
+    line-height: 40px;
+    margin-bottom: 20px;
+
     &__input {
       -webkit-appearance: none;
       -moz-appearance: none;
@@ -113,13 +117,15 @@
       outline: none;
       position: relative;
       z-index: 1000;
-      //  -------;
       border: 1px solid #dcdcdc;
+
       &:hover {
         background-color: #eeeeee;
       }
+
       &:checked {
         background-color: $red;
+
         &::before {
           height: 40px;
           width: 40px;
@@ -130,6 +136,7 @@
           text-align: center;
           line-height: 40px;
         }
+
         &::after {
           -webkit-animation: click-wave 0.65s;
           -moz-animation: click-wave 0.65s;
@@ -163,12 +170,6 @@
 
 // fonts
 
-body label {
-  display: flex;
-  line-height: 40px;
-  margin-bottom: 20px;
-}
-
 label p {
-  margin-top: 12px;
+  margin-top: 14px;
 }

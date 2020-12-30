@@ -31,12 +31,10 @@ h3 {
 
 .fw-b {
   font-weight: 700;
-  /* bold */
 }
 
 .fw-t {
   font-weight: 100;
-  /* bold */
 }
 
 .ls {
@@ -55,22 +53,18 @@ html,
 a,
 li {
   font-size: 16px;
-  /* height: 100% */
 }
 
 h1 {
   font-size: 1.8rem;
-  /* title */
 }
 
 h2 {
   font-size: 1.6rem;
-  /* capped header, important-field, reg header */
 }
 
 h3 {
   font-size: 1.1rem;
-  /* first-graph, btn, headers-small-capped */
 }
 
 .h2-med {
@@ -84,10 +78,7 @@ h3 {
 .fs-tiny {
   font-size: 0.7rem;
 }
-.fs-g-all {
-  /* font-size: 2rem; */
-  /* graphic */
-}
+
 
 .fs-g-circle-small {
   font-size: 1rem;
@@ -99,7 +90,6 @@ h3 {
 
 .ul-q-item {
   font-size: 1.2rem;
-  /* text with checkboxes */
 }
 
 /* ---------------- */
@@ -108,28 +98,22 @@ h3 {
 
 hr {
   width: 60%;
-  /* height: 1px; */
   background: #fff;
   color: #dcdcdc;
-  /* width: auto; */
-  /* horizontal line */
 }
 
 .c-round-s {
   border-radius: 0.8rem;
   padding: 10px;
-  /* corner */
 }
 
 .c-round {
   border-radius: 0.8rem;
   padding: 0.8rem;
-  /* corner */
 }
 
 .c-circle {
   border-radius: 50%;
-  /* circle */
 }
 
 .btn-empty {
@@ -240,7 +224,6 @@ hr {
 .background {
   width: 100%;
   height: auto;
-  /* margin: 0 auto; */
 }
 
 .container {
@@ -264,7 +247,6 @@ hr {
   width: auto;
   display: flex;
   justify-content: space-evenly;
-  /* flex-wrap: wrap-reverse; */
   flex-wrap: wrap;
   align-items: center;
 }
@@ -342,8 +324,6 @@ h2 {
   align-items: center;
 }
 
-/* >plan */
-
 .plan-card {
   display: flex;
   flex-direction: column;
@@ -351,7 +331,6 @@ h2 {
   align-items: center;
   height: 220px;
   width: 480px;
-  /* min-width: 480px; */
   z-index: 0;
   position: relative;
 }
@@ -473,9 +452,6 @@ h2 {
   align-items: center;
   height: 100px;
   padding: 0.8rem;
-  /* width: 560px; */
-  /* padding: 8px 40px; */
-  /* margin-top: 8px;
   margin-bottom: 8px; */
   position: absolute;
   transform: translate(-0%, -0%);
@@ -509,13 +485,7 @@ h2 {
 
 .fa-angle-down {
   font-size: 1.4rem;
-
-  /* padding: 5px; */
 }
-
-/* p field text */
-
-/* btn-empty */
 
 /* ---------- */
 /* Video */
@@ -527,7 +497,6 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* height: 68vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -552,8 +521,6 @@ h2 {
   align-items: center;
   padding-bottom: 40px;
   padding-top: 60px;
-
-  /* background-color: #dbd2cb; */
 }
 
 .warning-systems p {
@@ -588,14 +555,6 @@ h2 .important-field {
   align-items: center;
 }
 
-/* .important-graphic {
-  background-color: yellow;
-  color: #b2222a;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-} */
-
 .systems-text {
   text-align: center;
 }
@@ -617,7 +576,6 @@ h2 .important-field {
 }
 
 .steps p {
-  /* margin: 30px 100px; */
 }
 
 h2 .steps-title {
@@ -666,7 +624,6 @@ h2 .steps-title {
   position: absolute;
   top: 33px;
   left: -20px;
-  /* translate */
 }
 
 .index-graphic h2 span {
@@ -686,7 +643,7 @@ h2 .steps-title {
   align-items: flex-start;
 }
 
-/* start of radio button styling */
+/*radio button styling */
 
 @keyframes click-wave {
   0% {
@@ -720,21 +677,13 @@ h2 .steps-title {
   border: none;
   color: #fff;
   cursor: pointer;
-  /* display: inline-block; */
-  /* display: flex; */
-  /* justify-content: flex-start; */
   margin-right: 30px;
   outline: none;
   position: relative;
   z-index: 1000;
 }
 body label {
-  /* display: inline-block; */
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  /* flex-direction: column; */
-  /* display: block; */
   line-height: 40px;
   margin-bottom: 20px;
 }
@@ -773,31 +722,6 @@ label p {
   position: relative;
   z-index: 100;
 }
-.option-input.radio {
-  /* border-radius: 50%; */
-}
-.option-input.radio::after {
-  /* border-radius: 50%; */
-}
-
-/* body {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: box;
-  background: #e8ebee;
-  color: #9faab7;
-  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  text-align: center;
-} */
-
-/* body div {
-  padding: 5rem;
-} */
-
-/* end of radio button styling  */
-
-/* add info */
 
 /* ---------- */
 /* Add info */
@@ -808,7 +732,6 @@ label p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* height: 53vh; */
   background-color: #fff;
 }
 
@@ -841,10 +764,9 @@ ul {
   font-family: 'Font Awesome 5 Free';
   content: '\f7c0';
   display: inline-block;
-  /* padding-right: 3px; */
   vertical-align: middle;
   font-weight: 900;
-  margin-left: -16px; /* this is to move the icon left */
+  margin-left: -16px;
   padding-right: 10px;
 }
 
@@ -863,10 +785,9 @@ ul {
   font-family: 'Font Awesome 5 Free';
   content: '\f292';
   display: inline-block;
-  /* padding-right: 3px; */
   vertical-align: middle;
   font-weight: 900;
-  margin-left: -16px; /* this is to move the icon left */
+  margin-left: -16px;
   padding-right: 10px;
 }
 .unique-list .li-3 {
@@ -884,18 +805,15 @@ ul {
   font-family: 'Font Awesome 5 Free';
   content: '\f164';
   display: inline-block;
-  /* padding-right: 3px; */
   vertical-align: middle;
   font-weight: 900;
-  margin-left: -16px; /* this is to move the icon left */
+  margin-left: -16px;
   padding-right: 10px;
 }
 
 li hr {
   width: 100%;
 }
-
-/* custom list icons start */
 
 .wrap-colum {
   margin: 15px;
@@ -916,7 +834,6 @@ li hr {
   flex-basis: 100%;
   flex: 1;
   margin: 30px 50px;
-  /* margin: 60px; */
 }
 
 /* ---------- */
@@ -927,7 +844,6 @@ li hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* height: 33vh; */
   background-color: #b2222a;
   margin: ;
 }
@@ -955,9 +871,6 @@ li hr {
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-  /* position: absolute;
-  top: 0px;
-  left: 0px; */
   padding: 0px 20px;
   padding-left: 50px;
 }
@@ -975,10 +888,6 @@ li hr {
 /* ---------- */
 /* Footer */
 /* ---------- */
-
-.site-footer {
-  /* display: flex; */
-}
 
 .wrap-footer {
   display: flex;
