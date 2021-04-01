@@ -1,0 +1,42 @@
+/* ----------------- */
+/* >navbar */
+/* ----------------- */
+
+.navbar {
+  padding: 15px 0;
+  @include flex-row-around;
+  background-color: $white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__logo {
+    &--gov {
+      padding: 0.5rem;
+      // margin-right: 10px;
+      height: 50px;
+    }
+
+    &--DFES {
+      margin-left: 20px;
+      width: auto;
+      height: 40px;
+    }
+  }
+
+  &__navlinks {
+    padding: 0.5rem;
+    @include center;
+    &__link,
+    &__line {
+      margin-right: 20px;
+    }
+  }
+}
+
+//fonts
+
+.a--navlink {
+  font-size: 0.8rem;
+}

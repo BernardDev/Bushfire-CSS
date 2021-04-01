@@ -1,0 +1,66 @@
+/* ---------- */
+/* Footer */
+/* ---------- */
+
+.footer {
+  padding: 0 10vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__logos {
+    display: flex;
+  }
+
+  &__links {
+    display: flex;
+
+    &__link {
+      padding: 0 5px;
+      font-size: 0.7rem;
+      color: $white;
+    }
+
+    &__line {
+      color: $white;
+    }
+  }
+
+  &__copyrights {
+    margin-top: 10px;
+    color: $white;
+    flex-basis: 100%;
+  }
+}
+
+// logos
+
+.footer__logo {
+  display: inline-block;
+  &--3 {
+    margin-right: 20px;
+    height: 40px;
+  }
+
+  &--4 {
+    margin-right: 20px;
+    height: 40px;
+  }
+
+  &--2 {
+    height: 40px;
+  }
+}
+
+// fonts
+
+.a--footlinks {
+  font-size: 0.8rem;
+}
+
+.p--copyrights {
+  font-size: 0.7rem;
+}

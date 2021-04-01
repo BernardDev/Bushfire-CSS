@@ -1,0 +1,68 @@
+/* ---------------- */
+/* >elements  */
+/* ---------------- */
+hr {
+  width: 45%;
+  color: $white;
+}
+
+.btn {
+  @include rounded;
+  max-width: 50vw;
+
+  &--primary {
+    color: $white;
+    background-color: $red;
+  }
+
+  &--transparent {
+    color: $red;
+    border: 1px solid $red;
+    background-color: $alpha;
+  }
+
+  &__text {
+    font-weight: 700;
+
+    &--grey {
+      color: $grey;
+    }
+  }
+}
+
+.field {
+  @include rounded;
+  @include flex-column-center;
+  padding: 8 42px;
+  position: relative;
+  width: 35vw;
+
+  &--primary {
+    color: $white;
+    background-color: $red;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0 0.8rem;
+  }
+
+  &__circle {
+    @include circle;
+    @include center;
+    position: absolute;
+
+    &--yellow {
+      width: 50px;
+      height: 50px;
+      top: -10px;
+      left: -20px;
+      background-color: $yellow;
+    }
+
+    &__text {
+      color: $red;
+    }
+  }
+}

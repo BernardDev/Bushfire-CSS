@@ -1,0 +1,37 @@
+/* ---------- */
+/* Info */
+/* ---------- */
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__columns {
+    position: relative;
+
+    &__row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      &__column {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        margin: 30px 50px;
+
+        &__ul {
+          text-align: start;
+          list-style-position: outside;
+        }
+      }
+    }
+  }
+}

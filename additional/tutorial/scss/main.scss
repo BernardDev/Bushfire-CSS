@@ -1,0 +1,72 @@
+// #{&}
+// @import "thing"
+// _partial: (only a partial, do not generate CSS file, ignored by compiler)
+// resets
+
+// ---- IMPORTS
+@import './resets';
+@import './variables';
+
+// ---- FUNCTIONS
+@function size($size-name) {
+  @return map-get($font-size, $size-name);
+}
+
+// ---- MIXINS
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    background: lighten($background-color, 100%);
+    color: darken(p, 100%);
+  }
+}
+
+// ---- GENERAL
+html {
+  background-color: $background-color;
+}
+
+body {
+  color: white;
+}
+
+h1 {
+  color: $primary-color;
+  //   font-size: map-get($font-size, large);
+  //   font-size: size(large);
+}
+
+// ---- THE CODE
+.main {
+  @include flexCenter(row);
+  width: 80%;
+  margin: 0 auto;
+  //   p {
+  //     font-size: size(large);
+  //   }
+  //   &__paragraph {
+  //     font-size: size(large);
+  //   }
+  //   #{&}__paragraph {
+  //     font-size: size(large);
+  //   }
+  //   ------------
+  //   &__paragraph {
+  //     font-size: size(large);
+  //     &:hover {
+  //       color: $secondary-color;
+  //     }
+  //   }
+  #{&}__paragraph {
+    font-size: size(large);
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+/* ---------------- */
+/* font family */
+/* ---------------- */
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* ---------------- */
+/* >font weight */
+/* ---------------- */
+
+span {
+  font-weight: bold;
+}
+
+.fw-b {
+  font-weight: 700;
+}
+
+.fw-t {
+  font-weight: 100;
+}
+
+.ls {
+  letter-spacing: 1px;
+}
+
+/* ---------------- */
+/* Font size */
+/* ---------------- */
+
+html {
+  font-size: 16px;
+}
+
+a,
+li,
+p {
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
