@@ -37,8 +37,8 @@
       justify-content: center;
       text-align: center;
       position: absolute;
-      top: 4px;
-      left: 32px;
+      top: 10px;
+      left: 36px;
     }
 
     .card__item__text {
@@ -49,6 +49,8 @@
       height: 2rem;
 
       .item__text__caption {
+        font-size: 1.3rem;
+        letter-spacing: -0.05rem;
         line-height: 1;
         margin-left: 1rem;
         margin-right: 0.6rem;
@@ -72,8 +74,7 @@
     bottom: -40px;
 
     &__paragraph {
-      margin-bottom: 8px;
-      padding: 0px 80px;
+      padding: 4px 80px;
     }
 
     &__button {
@@ -111,7 +112,7 @@
   width: 120px;
   height: 130px;
   position: absolute;
-  top: 48px;
+  top: 38px;
   left: -30px;
   z-index: 90;
 
@@ -160,3 +161,5 @@
     font-size: 2.2rem;
   }
 }
+
+font-size: 1.3rem;

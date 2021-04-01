@@ -2,7 +2,16 @@
 /* Steps */
 /* ---------- */
 
+.steps-contain {
+  background-color: $light-grey;
+  filter: box-shadow (rgba(0, 0, 0, 0.24) 0px 20px 8px);
+}
+
+// .steps-shadow {
+// }
+
 .steps {
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
   padding-top: 50px;
   padding-bottom: 80px;
   background-color: $white;
@@ -11,3 +20,45 @@
   justify-content: center;
   text-align: center;
 }
+
+// .steps {
+//   filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+//   padding-top: 50px;
+//   padding-bottom: 80px;
+//   background-color: $white;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   text-align: center;
+
+//   &:before {
+//     clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
+//     content: '';
+//   }
+// }
+
+// body {
+//   height: 100vh;
+//   display: grid;
+//   place-items: center;
+//   margin: 0;
+//   background: #fff0dc;
+// }
+
+// .tag {
+//   padding: 2rem 3rem 2rem 4rem;
+//   font: bold 32px system-ui;
+//   filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, .5));
+
+//   &:before {
+//     position: absolute;
+//     z-index: -1;
+//     top: 0; right: 0; bottom: 0; left: 0;
+//     background: #FB8C00;
+//     color: #222;
+//     --p: polygon(30px 0, 100% 0, 100% 100%, 30px 100%, 0 50%);
+//     -webkit-clip-path: var(--p);
+//             clip-path: var(--p);
+//     content: ''
+//   }
+// }
